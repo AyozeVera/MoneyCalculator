@@ -1,7 +1,10 @@
 
 package Model;
 
+import java.util.HashSet;
 
-public class CurrencySet {
-
+//FALTA SINGLETON
+public class CurrencySet extends HashSet{
+    Currency[] currencies;
+    
 }
