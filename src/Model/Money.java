@@ -2,8 +2,8 @@
 package Model;
 
 public class Money {
-    Number ammount;
-    Currency currency;
+    private final Number ammount;
+    private final Currency currency;
 
     public Money(Number ammount, Currency currency) {
         this.ammount = ammount;
@@ -17,4 +17,10 @@ public class Money {
     public Currency getCurrency() {
         return currency;
     }
+
+    @Override
+    public String toString() {
+        return ammount.toString() + " " + currency.toString();
+    }
+    
 }
